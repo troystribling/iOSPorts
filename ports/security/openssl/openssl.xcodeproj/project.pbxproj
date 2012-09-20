@@ -6907,6 +6907,7 @@
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				PRODUCT_NAME = ssl;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "i386 armv6 armv7 arm7s";
 			};
 			name = Debug;
 		};
@@ -6922,6 +6923,7 @@
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				PRODUCT_NAME = ssl;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "i386 armv6 armv7 arm7s";
 			};
 			name = Release;
 		};
