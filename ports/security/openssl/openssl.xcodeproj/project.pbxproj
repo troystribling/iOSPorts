@@ -6907,7 +6907,7 @@
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				PRODUCT_NAME = ssl;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "i386 armv6 armv7 arm7s";
+				VALID_ARCHS = "i386 armv6 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -6923,7 +6923,7 @@
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				PRODUCT_NAME = ssl;
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "i386 armv6 armv7 arm7s";
+				VALID_ARCHS = "i386 armv6 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -7009,8 +7009,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = crypto;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -7024,31 +7026,41 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = crypto;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s";
 			};
 			name = Release;
 		};
 		A0511DEE127788ED00DE46C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = Makefile;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s";
 			};
 			name = Debug;
 		};
 		A0511DEF127788ED00DE46C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = Makefile;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s";
 				ZERO_LINK = NO;
 			};
 			name = Release;
